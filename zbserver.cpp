@@ -16,9 +16,9 @@ int main() {
 
 	while(true) {
 		message_t recv;
-		message_t send(5);
-		memcpy(send.data(), "12345", 5);	
+		message_t send;
 		client.recv(&recv);
+		send.copy(&recv);
 		pub.send(send);
 		cout << '.';
 	}
