@@ -1,0 +1,10 @@
+ZMQ Bounce - A Utility for bouncing messages with ZMQ
+
+
+zbserver listens on tcp://localhost:5655, sending a message on
+epgm://;224.0.0.1:5656 every time it revieves one.
+
+zbclient sends messages on tcp://localhost:5655, waiting for a message
+on epgm://;224.0.0.1:5656 every time it has sent one.
+
+To compile, just run `make all`.
